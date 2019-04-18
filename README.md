@@ -12,7 +12,7 @@ This works with any URL but for this example I'm using [Minikube](https://kubern
 minikube dashboard --url >| /tmp/kubedash
 ```
 
-Download, install, and enable the workflow binary in this repo: [OpenMinikubeDashboardURL.alfredworkflow](https://github.com/steadystatic/alfred-minikube-dash/blob/master/OpenMinikubeDashboardURL.alfredworkflow)
+Download, install, and enable the workflow binary in this repo: [OpenMinikubeDashboardURL.alfredworkflow](https://github.com/steadystatic/alfred-minikube-dash/blob/master/OpenMinikubeDashboardURL.alfredworkflow?raw=true)
 
 Now whenever you need to check your dashboard invoke Alfred and type keyword 'minidash' the URL will open in your default system browser (via this command: `python -m webbrowser -t "$(tail -n 1 /tmp/kubedash)"`)
 
