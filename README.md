@@ -16,6 +16,9 @@ Download, install, and enable the workflow binary in this repo: [OpenMinikubeDas
 
 Now whenever you need to check your dashboard invoke Alfred and type keyword 'minidash' the URL will open in your default system browser (via this command: `python -m webbrowser -t "$(tail -n 1 /tmp/kubedash)"`)
 
-Also included in the binary is a simple bash snippet expansion, `mkip` will copy and paste the current Minikube machine's IP address from the clipboard (providing the current Kubernetes context is minikube...check via `kubectl config current-context`)
+Also included in the binary are two simple bash keyword snippet expansions:
+
+- `mkip` copies/pastes current Minikube machine's IP address from clipboard (provided current Kubernetes context is 'minikube'...check via `kubectl config current-context`)
+- `mkdash` pastes the current URL of the Minikube dashboard (without opening browser)
 
 
